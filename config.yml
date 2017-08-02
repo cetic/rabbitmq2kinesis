@@ -1,0 +1,10 @@
+simulation: True     #Simulation mode (if True, only shows RabbitMQ messages on the terminal and does not send it to AWS
+
+rabbitmq:
+  host: localhost     #hostname or ip of the Rabbitmq server
+  queue: queue        #name of the queue
+
+aws:
+  region: eu-west-1   #region of your Kinesis stream
+  stream: TBD         #name of your Kinesis stream
+  partition_key: TBD  #partition key of your Kinesis stream
